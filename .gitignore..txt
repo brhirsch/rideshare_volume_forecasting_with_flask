@@ -53,6 +53,8 @@ docs/_build/
 .idea
 **/.vscode/
 **/.idea/
-__pycache__/
+/.idea/
+/__pycache__/
  *.pyc
-**/__pycache__/ 
+**/__pycache__/**
+**/__pycache__/*
