@@ -58,3 +58,8 @@ docs/_build/
  *.pyc
 **/__pycache__/**
 **/__pycache__/*
+app/__pycache__/*
+app/__pycache__/**
+# IntelliJ IDEA
+.idea/
+*.iml
