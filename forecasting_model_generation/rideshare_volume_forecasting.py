@@ -1,17 +1,11 @@
 import pandas as pd
 from sodapy import Socrata
 from fbprophet import Prophet
-from fbprophet.diagnostics import cross_validation
 
-# Unauthenticated client only works with public data sets. Note 'None'
-# in place of application token, and no username or password:
-client = Socrata("data.cityofchicago.org", 'WvpiRPNr9Eq21W0kctAqodZYj')
+application_id = 'WvpiRPNr9Eq21W0kctAqodZYj'
 
-# Example authenticated client (needed for non-public datasets):
-# client = Socrata(data.cityofchicago.org,
-#                  MyAppToken,
-#                  userame="user@example.com",
-#                  password="AFakePassword")
+# Query Chicago City API
+client = Socrata("data.cityofchicago.org", application_id)
 
 historical_data = client.get("wrvz-psew", where='trip_start_timestamp > \'2020-03-20T00:00:00.000\'', limit=100000000)
 
@@ -33,6 +27,7 @@ historical_data = historical_data.reset_index().sort_values(by='trip_start_times
 
 historical_data = historical_data[['trip_start_timestamp', 'counter']]
 
+# Change column names to fit Prophet module format requirements
 historical_data.columns = ['ds', 'y']
 
 # Instantiate and fit Facebook Prophet model
