@@ -63,3 +63,4 @@ app/__pycache__/**
 # IntelliJ IDEA
 .idea/
 *.iml
+.idea/workspace.xml
