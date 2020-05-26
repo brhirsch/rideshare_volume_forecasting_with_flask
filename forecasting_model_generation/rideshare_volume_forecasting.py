@@ -1,6 +1,6 @@
 import pandas as pd
 from sodapy import Socrata
-from fbprophet import Prophet
+from forecasting_functions import *
 
 application_id = 'WvpiRPNr9Eq21W0kctAqodZYj'
 
@@ -27,33 +27,7 @@ historical_data = historical_data.reset_index().sort_values(by='trip_start_times
 
 historical_data = historical_data[['trip_start_timestamp', 'counter']]
 
-# Change column names to fit Prophet module format requirements
-historical_data.columns = ['ds', 'y']
+prophet_forecast = make_prophet_forecast(historical_data)
 
-# Instantiate and fit Facebook Prophet model
-my_model = Prophet()
-
-# Add holiday regressors
-my_model.add_country_holidays(country_name='US')
-
-# Fit and Predict
-my_model.fit(historical_data)
-
-future_dates = my_model.make_future_dataframe(periods=168, freq='1h')
-
-forecast = my_model.predict(future_dates)
-
-forecast = forecast[['ds', 'yhat']]
-
-# Set negative values to 0
-forecast.yhat = forecast.yhat.apply(lambda x: 0 if x < 0 else x)
-
-if __name__ == '__main__':
-    import matplotlib.pyplot as plt
-    import seaborn as sns
-
-    # Set axis size
-    fig, ax = plt.subplots(figsize=(30, 10))
-
-    # Plot Forecast
-    sns.lineplot(y='yhat', x='ds', data=forecast)
+# Create csv file of 2 week forecast using prophet and save in app directory
+prophet_forecast.to_csv(r'../app/prophet_forecast.csv')
