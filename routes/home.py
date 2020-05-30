@@ -13,3 +13,7 @@ historical_data = pd.read_csv(r'..\rideshare_webapp\data\historical_data.csv')
 def home():
     line = create_plot(historical_data, 'Historical Hourly Taxi Volume', 'Date', 'Number of Rides')
     return render_template('home.html', plot=line)
+
+@app.route('/forecast', methods=['POST', 'GET'])
+def show_selected_forecast_view():
+    return request.form.get("forecast_select")

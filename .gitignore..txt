@@ -64,3 +64,4 @@ app/__pycache__/**
 .idea/
 *.iml
 .idea/workspace.xml
+**/__pycache__/

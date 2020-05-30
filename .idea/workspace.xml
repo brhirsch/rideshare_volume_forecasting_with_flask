@@ -11,13 +11,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac1cdd82-6ae6-48c0-941b-0a64343a58dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/internal_services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal_services/functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore..txt" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore..txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/prophet_forecast.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/prophet_forecast.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/home.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forecasting_model_generation/rideshare_volume_forecasting.py" beforeDir="false" afterPath="$PROJECT_DIR$/forecasting_model_generation/rideshare_volume_forecasting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/home.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/home.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/prophet_forecast.py" beforeDir="false" afterPath="$PROJECT_DIR$/routes/prophet_forecast.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/forecast_view.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/internal_services" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -109,30 +109,30 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590864721586">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590866885432">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590864721586" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590864720820">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590866885432" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1590866884698">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590864720820" />
-    <state width="949" height="266" key="GridCell.Tab.0.bottom" timestamp="1590866074644">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590866884698" />
+    <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1590869964834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590866074644" />
-    <state width="949" height="266" key="GridCell.Tab.0.center" timestamp="1590866074644">
+    <state width="1899" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1590869964834" />
+    <state width="1899" height="266" key="GridCell.Tab.0.center" timestamp="1590869964834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590866074644" />
-    <state width="949" height="266" key="GridCell.Tab.0.left" timestamp="1590866074644">
+    <state width="1899" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1590869964834" />
+    <state width="1899" height="266" key="GridCell.Tab.0.left" timestamp="1590869964833">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590866074644" />
-    <state width="949" height="266" key="GridCell.Tab.0.right" timestamp="1590866074644">
+    <state width="1899" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1590869964833" />
+    <state width="1899" height="266" key="GridCell.Tab.0.right" timestamp="1590869964834">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="949" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590866074644" />
+    <state width="1899" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1590869964834" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590538377508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
