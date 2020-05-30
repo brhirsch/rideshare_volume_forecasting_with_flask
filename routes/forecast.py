@@ -1,13 +1,17 @@
-# from app import app
-#
-# from flask import Flask, render_template,request
-# import plotly
-# import plotly.graph_objs as go
-#
-# import pandas as pd
-# import numpy as np
-# import json
-#
+from app import app
+
+from flask import Flask, render_template,request
+import plotly
+import plotly.graph_objs as go
+
+import pandas as pd
+import numpy as np
+import json
+
+@app.route('/forecast', methods=['POST', 'GET'])
+def show_selected_forecast_view():
+    return request.form.get("forecast_select")
+
 # prophet_forecast = pd.read_csv(r'..\rideshare_webapp\data\prophet_forecast.csv')
 #
 # @app.route('/')
