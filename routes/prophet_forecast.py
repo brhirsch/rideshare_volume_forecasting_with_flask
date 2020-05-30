@@ -8,10 +8,9 @@ import pandas as pd
 import numpy as np
 import json
 
-prophet_forecast = pd.read_csv(r'..\rideshare_webapp\app\prophet_forecast.csv')
+prophet_forecast = pd.read_csv(r'..\rideshare_webapp\data\prophet_forecast.csv')
 
 @app.route('/')
-@app.route('/index')
 def index():
     line = create_plot(prophet_forecast)
     return render_template('index.html', plot=line)

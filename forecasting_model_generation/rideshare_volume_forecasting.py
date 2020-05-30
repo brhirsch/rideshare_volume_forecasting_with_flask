@@ -31,3 +31,6 @@ prophet_forecast = make_prophet_forecast(historical_data)
 
 # Create csv file of 2 week forecast using prophet and save in app directory
 prophet_forecast.to_csv(r'../app/prophet_forecast.csv')
+
+# Create csv file for historical data
+historical_data.to_csv(r'../app/historical_data.csv')
