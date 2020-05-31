@@ -2,8 +2,10 @@
 A web app which showcases forecasted rideshare volume in Chicago built on Flask
 
 # TO DO
-- Add to html page using web app framework (Need to research web app frameworks like bootstrap)
-- Define AWS and web architecture to host application. Save historical data in S3, use Lambda function to run forecasting models and save back in S3, have web app query S3 for visuals
+- Rework CSS to make it look nice (Need to research css frameworks like bootstrap)
+- Define AWS and web architecture to host application. Save historical data in S3, use Lambda function to run forecasting models and save back in S3, have web app query S3 for forecast visuals
+- Implement automatic forecast accuracy tracking (weekly calculation of forecast metrics)
+- Create second part of web app which showcases weekly forecast accuracy for each method 
 
 # Done
 - Update function documentation 
