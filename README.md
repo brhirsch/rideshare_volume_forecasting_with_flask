@@ -1,4 +1,4 @@
-# rideshare_volume_forecasting_with_flask
+# urban_taxi_volume_forecasting_with_flask
 A web app which visualizes historical and forecasted taxi ride volume in Chicago using an array of statistical forecasting models. 
 
 The purpose of this project was to dive deeper into full stack development by incorporating the outputs of machine learning models into an application built on Python/Flask with a front end in html/bootstrap. 
