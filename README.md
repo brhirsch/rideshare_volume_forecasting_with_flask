@@ -3,7 +3,7 @@ A web app which visualizes historical and forecasted taxi ride volume in Chicago
 
 The purpose of this project was to dive deeper into full stack development by incorporating the outputs of machine learning models into an application built on Python/Flask with a front end in html/bootstrap. 
 
-![Network 1](https://github.com/brhirsch/Forecasting-Chicago-Rideshare-Volume-/blob/master/images/network1.PNG)
+![Network 1](https://github.com/brhirsch/urban_taxi_volume_forecasting_with_flask-/blob/master/images/taxi_ride_volume_forecast.png.PNG)
 
 
 # TO DO
