@@ -8,9 +8,12 @@ The purpose of this project was to dive deeper into full stack development by in
 
 # TO DO
 - Rework CSS to make it look nice (Need to research css frameworks like bootstrap)
-- Define AWS and web architecture to host application. Save historical data in S3, use Lambda function to run forecasting models and save back in S3, have web app query S3 for forecast visuals
-- Implement automatic forecast accuracy tracking (weekly calculation of forecast metrics)
-- Create second part of web app which showcases weekly forecast accuracy for each method 
+- Define AWS and web architecture to host application. 
+  1. Script to pull historical data, run models, save csv's to S3 
+  2. Add code to pull csv's from S3 and use in Flask app on startup 
+  3. Deploy Flask app on EC2
+
+- Add rideshare volume forecasting for same date range in graph under taxi graph 
 
 # Done
 - Update function documentation 
