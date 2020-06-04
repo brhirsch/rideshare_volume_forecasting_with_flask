@@ -7,8 +7,8 @@ The purpose of this project was to dive deeper into full stack development by in
 
 
 # TO DO
-- Rework CSS to make it look nice (Need to research css frameworks like bootstrap)
-- Define AWS and web architecture to host application. 
+- Rework CSS
+- Define AWS and web architecture to host application
   1. Script to pull historical data, run models, save csv's to S3 
   2. Add code to pull csv's from S3 and use in Flask app on startup 
   3. Deploy Flask app on EC2
@@ -17,5 +17,5 @@ The purpose of this project was to dive deeper into full stack development by in
 
 # Done
 - Update function documentation 
-- Add functionality to have a html radio button form which allows users to switch between visuals of forecasts made with Prophet, TBATS, and SARIMA
-- Show past 2 weeks of historical data on same line chart as forecasts, with historical in blue and forecasts in orange 
+- Add functionality to have a html form which allows users to switch between visuals of forecasts made with Prophet, TBATS, and SARIMA
+- Show past 2 weeks of historical data on same line chart as forecasts
